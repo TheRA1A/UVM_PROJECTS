@@ -66,7 +66,7 @@ endmodule
 ## Testbench Architecture
 ![UVM Testbench Architecture](arch.jpeg)
 
-## Testbench Architecture
+## State Diagram
 ![UVM Testbench Architecture](state.jpeg)
 
 ### Key Components
