@@ -1,17 +1,9 @@
 # Digital Design Verification Projects
-
-This repository contains three implementations of counters with different verification methodologies, demonstrating progression from SystemVerilog to UVM-based verification approaches.
+This repository contains implementations with different verification projects, demonstrating comprehensive UVM-based verification approaches.
 
 ## Projects Overview
 
-### 1. Module-12 Up/Down Loadable Counter with SystemVerilog Verification
-- Implementation of a parameterized 12-bit up/down counter with load functionality
-- Comprehensive SystemVerilog testbench with:
-  - Constrained random stimulus
-  - Functional coverage
-- Detailed verification reports and waveforms
-
-### 2. Up Counter with UVM Testbench
+### 1. Up Counter with UVM Testbench
 - Basic up counter implementation
 - Complete UVM-based verification environment featuring:
   - Reusable components (Sequencer, Driver, Monitor)
@@ -19,9 +11,10 @@ This repository contains three implementations of counters with different verifi
   - Coverage collection
   - Test scenarios
 - Performance and coverage reports
+- Includes waveform visualization
 
-### 3. Module-12 Up/Down Loadable Counter with UVM
-- Advanced implementation combining previous projects
+### 2. Module-12 Up/Down Loadable Counter with UVM
+- Advanced implementation of a 12-bit up/down counter
 - Comprehensive UVM verification environment including:
   - Layered testbench architecture
   - Sequence library
@@ -29,44 +22,67 @@ This repository contains three implementations of counters with different verifi
   - Advanced coverage metrics
   - Comprehensive test scenarios
 - Full verification reports and analysis
+- Architecture diagram and waveform visualization
+
+### 3. Pattern Detection FSM (1011) with UVM
+- Finite State Machine implementation for detecting pattern "1011"
+- Complete UVM verification environment featuring:
+  - Agent-based architecture
+  - Advanced test scenarios
+  - Pattern detection verification
+  - Coverage metrics
+- Detailed architecture diagram
+- Comprehensive test reports
 
 ## Directory Structure
 ```
-.
-├── counter_sv
-│   ├── counter.sv
-│   └── README.md
 ├── mod12_counter_uvm
-│   ├── env
-│   ├── rd_agt
-│   ├── README.md
-│   ├── report
-│   ├── rtl
-│   ├── sim
-│   ├── test
-│   ├── top
-│   └── wr_agt
+│   ├── architecture.jpeg
+│   ├── env
+│   ├── rd_agt
+│   ├── README.md
+│   ├── report
+│   ├── rtl
+│   ├── sim
+│   ├── test
+│   ├── top
+│   ├── Waveform.png
+│   └── wr_agt
+├── pattern_1011
+│   ├── agt
+│   ├── arch.jpeg
+│   ├── env
+│   ├── README.md
+│   ├── report
+│   ├── rtl
+│   ├── sim
+│   ├── test
+│   └── top
+├── README.md
 └── up_counter_uvm
-    ├── dest
+    ├── agt
+    ├── arch.jpeg
     ├── env
     ├── README.md
     ├── report
     ├── rtl
     ├── sim
-    ├── source
     ├── test
-    └── top
+    ├── top
+    └── Waveform.png
 ```
 
 ## Key Features
-- Multiple verification methodologies
+- UVM-based verification methodologies
 - Comprehensive test coverage
-- Detailed reports
+- Detailed architectural diagrams
+- Waveform visualizations
+- Extensive reporting
 
 ## Requirements
-- QuestaSim for simulation
-- SystemVerilog supported simulator
+- QuestaSim/ModelSim for simulation
 - UVM 1.2 or later
+- SystemVerilog supported simulator
 - VCS/Questa verification platforms
 
 ## Getting Started
@@ -79,7 +95,9 @@ This repository contains three implementations of counters with different verifi
 Each project contains detailed reports including:
 - Functional coverage metrics
 - Test scenarios and their results
-- Follow the each README.md file for more instructions
+- Architecture diagrams
+- Waveform analysis
+- Follow each README.md file for specific instructions
 
 ## Contributing
 Feel free to contribute by:
@@ -87,5 +105,3 @@ Feel free to contribute by:
 - Suggesting enhancements
 - Adding new test scenarios
 - Improving documentation
-
-
