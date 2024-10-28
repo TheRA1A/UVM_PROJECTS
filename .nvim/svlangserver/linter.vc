@@ -1,6 +1,12 @@
 -v /home/raja/Desktop/UVM_PROJECTS/mod12_counter_uvm/top/counter_pkg.sv
 -v /home/raja/Desktop/UVM_PROJECTS/pattern_1011/top/fsm_pkg.sv
 -v /home/raja/Desktop/UVM_PROJECTS/up_counter_uvm/top/counter_pkg.sv
+-v /home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/top/test_pkg.sv
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/env
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/rd_agt
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/rtl
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/top
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/wr_agt
 +incdir+/home/raja/Desktop/UVM_PROJECTS/mod12_counter_uvm/env
 +incdir+/home/raja/Desktop/UVM_PROJECTS/mod12_counter_uvm/rd_agt
 +incdir+/home/raja/Desktop/UVM_PROJECTS/mod12_counter_uvm/rtl
@@ -14,6 +20,11 @@
 +incdir+/home/raja/Desktop/UVM_PROJECTS/up_counter_uvm/env
 +incdir+/home/raja/Desktop/UVM_PROJECTS/up_counter_uvm/rtl
 +incdir+/home/raja/Desktop/UVM_PROJECTS/up_counter_uvm/top
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/env
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/rd_agt
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/rtl
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/top
++incdir+/home/raja/Desktop/UVM_PROJECTS/FIFO_UVM/wr_agt
 +incdir+/home/raja/Desktop/UVM_PROJECTS/mod12_counter_uvm/env
 +incdir+/home/raja/Desktop/UVM_PROJECTS/mod12_counter_uvm/rd_agt
 +incdir+/home/raja/Desktop/UVM_PROJECTS/mod12_counter_uvm/rtl
