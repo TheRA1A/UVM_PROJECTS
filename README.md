@@ -17,7 +17,6 @@ This repository contains implementations with different verification projects, d
 - Advanced implementation of a 12-bit up/down counter
 - Comprehensive UVM verification environment including:
   - Layered testbench architecture
-  - Sequence library
   - Configuration database usage
   - Advanced coverage metrics
   - Comprehensive test scenarios
@@ -38,10 +37,8 @@ This repository contains implementations with different verification projects, d
 - Synchronous FIFO implementation with configurable depth (16 entries)
 - Advanced UVM verification environment including:
   - Dual-agent architecture (Read and Write)
-  - Comprehensive sequence library
   - Protocol checking and assertions
   - Advanced coverage metrics
-  - Full overflow/underflow testing
 - Features verified:
   - Read/Write operations
   - Full/Empty conditions

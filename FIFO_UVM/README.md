@@ -9,8 +9,6 @@ This project implements and verifies a synchronous FIFO memory with a depth of 1
 - Reset behavior verification
 - Pointer wraparound testing
 - Back-to-back operations
-- Overflow/Underflow protection
-- Data integrity checks
 
 ## RTL Specifications
 - 8-bit data width
@@ -23,9 +21,10 @@ This project implements and verifies a synchronous FIFO memory with a depth of 1
 
 ## Verification Environment
 ### Architecture
+![UVM Testbench Architecture](arch.jpeg)
+
 The verification environment consists of:
 - Separate read and write agents
-- Virtual sequencer for coordinating transactions
 - Scoreboard for checking data integrity
 - Coverage collector
 - Configuration database for test parameters
@@ -44,7 +43,6 @@ The verification environment consists of:
    - Read sequences
 
 3. Environment
-   - Virtual sequencer
    - Scoreboard
    - Coverage collector
    - Configuration object
@@ -53,8 +51,6 @@ The verification environment consists of:
 1. Basic Tests
    - Reset test
    - Single write/read
-   - Multiple writes followed by reads
-   - Alternate write/read
 
 2. Corner Cases
    - Full FIFO write attempt
@@ -62,23 +58,12 @@ The verification environment consists of:
    - Pointer wraparound
    - Back-to-back operations
 
-3. Stress Tests
-   - Random reads and writes
-   - Burst operations
-   - Full/Empty transitions
-
 ## Coverage Metrics
 - Functional coverage for:
   - Full/Empty conditions
   - Pointer wraparound
   - Concurrent operations
-  - Reset during operations
   - Data patterns
-- Code coverage targets:
-  - 100% line coverage
-  - 100% branch coverage
-  - 100% toggle coverage
-  - 95% expression coverage
 
 ## Assertions
 - Protocol checks:
@@ -87,20 +72,17 @@ The verification environment consists of:
   - Read pointer update
   - Full/Empty conditions
 - Functional checks:
-  - Data integrity
-  - FIFO depth maintenance
-  - Flag accuracy
+  - Flag (Empty,Full) accuracy
 - Liveness properties:
   - Eventually read after write
   - Reset completion
 
 ## Running Tests
 ```bash
+# Go to the make file for more information
 cd sim
 make clean
-make compile
-make run TEST=basic_test
-make coverage
+make regress # run all the test
 ```
 
 ## Directory Structure
@@ -141,10 +123,3 @@ FIFO_UVM/
 ## Known Limitations
 - Single clock domain only
 - Fixed FIFO depth
-- No gray coding for pointers
-
-## Future Enhancements
-- Add gray coding for pointers
-- Implement almost full/empty flags
-- Add clock domain crossing support
-- Parameterize FIFO depth
