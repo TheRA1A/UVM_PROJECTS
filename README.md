@@ -133,3 +133,8 @@ Feel free to contribute by:
 - Suggesting enhancements
 - Adding new test scenarios
 - Improving documentation
+
+## Contributors
+This project was developed by:
+- [TheRA1A](https://github.com/TheRA1A)
+- [Kassa Keerthi](https://github.com/kassakeerthi)
